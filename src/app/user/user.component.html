@@ -1,0 +1,13 @@
+<table style="border: black 1px solid">
+  <th>UserId</th>
+  <th>Firstname</th>
+  <th>Lastname</th>
+  <tr  *ngFor="let user of users" (click)="select(user)">
+    <td  style="padding:5%; border: black 1px solid">{{user.userId}}</td>
+    <td style="padding:5%;border: black 1px solid">{{user.firstName}}</td>
+    <td style="padding:5%;border: black 1px solid">{{user.lastName}}</td>
+</table>
+
+
+
+
